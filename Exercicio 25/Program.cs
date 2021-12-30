@@ -50,12 +50,16 @@ namespace Exercicio_25
                 }
             }
 
+            double total = 0.0;
             Console.WriteLine("\nTAXES PAID: ");
             foreach (var item in listPessoa)
             {
+                double tax = item.CalcularImposto();
                 Console.WriteLine(item.Nome + ": $ " + item.CalcularImposto().ToString("F2"));
+                total += tax;
             }
 
+            Console.WriteLine($"Total: {total.ToString("F2")}");
             Console.ReadKey();
         }
     }
