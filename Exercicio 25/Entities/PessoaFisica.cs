@@ -14,15 +14,13 @@
          * Se a pessoa teve gastos com saúde, 50% destes gastos são abatidos no imposto.*/
         public override double CalcularImposto()
         {
-            double imposto;
-
             if (RendaAnual <= 20000)
             {
-                return imposto = ((RendaAnual * 15) / 100) - ((GastoSaude * 50) / 100); 
+                return ((RendaAnual * 15) / 100) - ((GastoSaude * 50) / 100);
             }
             else
             {
-                 return imposto = ((RendaAnual * 25) / 100) - ((GastoSaude * 50) / 100);
+                return ((RendaAnual * 25) / 100) - ((GastoSaude * 50) / 100);
             }
         }
     }

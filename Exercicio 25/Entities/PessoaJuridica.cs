@@ -20,18 +20,14 @@ namespace Exercicio_25.Entities
          * Ela paga 14% de imposto. */
         public override double CalcularImposto()
         {
-            double imposto;
-
             if(Funcionario > 10)
             {
-                imposto = ((RendaAnual * 14) / 100);
+                return ((RendaAnual * 14) / 100);
             }
             else
             {
-                imposto = ((RendaAnual * 16) / 100);
+                return ((RendaAnual * 16) / 100);
             }
-
-            return imposto;
         }
     }
 }
